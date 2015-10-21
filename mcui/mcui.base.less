@@ -1,0 +1,185 @@
+@bodybg:#fff;
+@bodycolor:#000;
+@headerbg:#123456;
+@headercolor:#fff;
+@headerheight:3rem;
+@headerline:3rem;
+@headerpadding:0 1rem;
+@footerbg:#123456;
+@footercolor:#fff;
+@footerheight:3rem;
+@footerline:3rem;
+@footerpadding:0 1rem;
+@mainbg:#ccc;
+@maincolor:#000;
+@white:#fff;
+@mc:#123456;
+@font:100%;
+*, *:before, *:after {
+    -webkit-user-select:none;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color:rgba(0, 0, 0, 0);
+    -moz-user-select:-moz-none;
+    -webkit-touch-callout: none;
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -ms-touch-action:pan-y;
+}
+
+body,header,footer {
+}
+body,header,footer {
+}
+
+body, html {
+    -ms-overflow-style: none !important;
+    width:100%;
+    height:100%;
+    font-size: @font;
+    overflow:hidden;
+}
+ul,li{
+	list-style: none;
+}
+body {
+    overflow:hidden;
+    -webkit-text-size-adjust:none;
+    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color:@bodycolor;
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align:stretch;
+    background:@bodybg;
+     display: -webkit-box;
+    display:    -moz-box;
+    display:         box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    display: -webkit-flex;
+    display:    -moz-flex;
+    display:     -ms-flex;
+    display:         flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height:100%;
+    width:100%;
+}
+
+.header {
+    position:relative;
+    overflow: hidden;
+    display:block;
+    z-index:999;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    height:@headerheight;
+    line-height:@headerline;
+    padding:@headerpadding;
+    left:0;
+    right:0;
+    background:@headerbg;
+    color: @headercolor;
+    .menu {
+    	display:none;
+    	span{
+    		position: absolute;
+    		top:50%;
+    	}
+    	span,
+    	span:before,
+    	span:after{
+	    	spancursor: pointer;
+			border-radius: 1rem;
+			height: .06rem;
+			width: 1rem;
+			background: @white;
+			position: absolute;
+			display: block;
+			content: '';
+		}
+		span:before{
+			top: -.4rem;
+		}
+		span:after{
+			bottom: -.4rem;
+		}
+    }
+    .title {
+    	height:3rem;
+    	font-size: @font + 20;
+    	float:left;
+    	.logo{
+	    	width:3rem;
+	    	display: block;
+	    	height:3rem;
+	    	float:left;
+	    }
+	    h1{
+	    	display: inline-block;
+    		font-size: @font + 20;
+	    }
+    }
+    .list{
+    	display: inline-block;
+    	float:right;
+    	ul{
+    		li{
+    			font-size: @font + 20;
+    			display: inline-block;
+    			padding:0 2rem;
+    		}
+    	}
+    }
+
+}
+.app{
+	.menu{
+		display:block;
+	}
+	.title{
+  		width: 100%;
+    	text-align: center;
+	}
+}
+.footer{
+    z-index:999;
+    height:@footerheight;
+    line-height:@footerline;
+    color:@footercolor;
+    display:block;
+    left:0;
+    right:0;
+    bottom:0;
+    position:relative;
+    padding:@footerpadding;
+    background:@footerbg;
+    display: -webkit-box;
+    display:    -moz-box;
+    display:         box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display:    -moz-flex;
+    display:     -ms-flex;
+    display:         flex;
+}
+#main{
+	background:@mainbg;
+	color:@maincolor;
+    position:relative;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}

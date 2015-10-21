@@ -8,15 +8,32 @@
     <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>MCUI</title>
-    <link rel="stylesheet" type="text/css" href="mcui/mcui.base.css">
+	<link rel="stylesheet/less" type="text/css" href="mcui/mcui.base.less" />
+	<script src="http://cdn.bootcss.com/less.js/1.7.0/less.min.js"></script>
     <script src="mcui/mcui.js"></script>
 </head>
-<body>
+<body class="11">
+<script type="text/javascript">
+x=document.getElementsByTagName('body')[0];
+document.write("Body CSS class: " + x.className);
+console.log(document.getElementsByTagName('body')[0].className);
+</script>
 	<div id="header" class="header">
 		<a class="menu" href="">
 			<span></span>
 		</a>
-		<h1>标题</h1>
+		<div class="title">
+			<a class="logo"></a>
+			<h1>MCUI</h1>
+		</div>
+		<div class="list">
+			<ul>
+				<li>主页</li>
+				<li>实例</li>
+				<li>资源</li>
+				<li>关于</li>
+			</ul>
+		</div>
 	</div>
 	<!-- /header -->
 	<div id="main">
@@ -24,5 +41,9 @@
 			
 		</div>
 	</div>
+	<div id="footer" class="footer">
+11
+	</div>
+	<!-- /footer -->
 </body>
 </html>
