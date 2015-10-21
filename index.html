@@ -13,11 +13,7 @@
     <script src="mcui/mcui.js"></script>
 </head>
 <body class="11">
-<script type="text/javascript">
-x=document.getElementsByTagName('body')[0];
-document.write("Body CSS class: " + x.className);
-console.log(document.getElementsByTagName('body')[0].className);
-</script>
+	<script type="text/javascript">navigator.userAgent.match(/Mobile|iPhone|iPad|Android/i) || Math.min(screen.height,screen.width) <= 480 ? document.getElementsByTagName('body')[0].className = 'app' : '';</script>
 	<div id="header" class="header">
 		<a class="menu" href="">
 			<span></span>
