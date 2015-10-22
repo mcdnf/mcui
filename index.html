@@ -10,36 +10,32 @@
 	<title>MCUI</title>
 	<link rel="stylesheet/less" type="text/css" href="mcui/mcui.base.less" />
 	<script src="http://cdn.bootcss.com/less.js/1.7.0/less.min.js"></script>
-    <script src="mcui/mcui.js"></script>
+   	<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body class="11">
-	<script type="text/javascript">navigator.userAgent.match(/Mobile|iPhone|iPad|Android/i) || Math.min(screen.height,screen.width) <= 480 ? document.getElementsByTagName('body')[0].className = 'app' : '';</script>
-	<div id="header" class="header">
-		<a class="menu" href="">
-			<span></span>
-		</a>
-		<div class="title">
-			<a class="logo"></a>
-			<h1>MCUI</h1>
-		</div>
-		<div class="list">
-			<ul>
-				<li>主页</li>
-				<li>实例</li>
-				<li>资源</li>
-				<li>关于</li>
-			</ul>
-		</div>
+	<div id="menu" class="menu">
+		menu
 	</div>
-	<!-- /header -->
-	<div id="main">
-		<div>
-			
+	<div id="view" class="view">
+		<div id="header" class="header">
+			<a class="menu-icon right" href="">
+				<span></span>
+			</a>
+			<h1 class="title">
+				MCUI
+			</h1>
 		</div>
+		<!-- /header -->
+		<div id="main" class="main">
+			<div>
+				main
+			</div>
+		</div>
+		<div id="footer" class="footer">
+			footer
+		</div>
+		<!-- /footer -->
 	</div>
-	<div id="footer" class="footer">
-11
-	</div>
-	<!-- /footer -->
+	 <script src="mcui/mcui.js"></script>
 </body>
 </html>
